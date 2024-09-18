@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import * as data from '../../../../config.json';
+import * as data from '../../../../../config.json';
 
 @Component({
     selector: 'app-host',

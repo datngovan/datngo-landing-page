@@ -1,0 +1,12 @@
+<input
+    #inputRef
+    id="prompt"
+    type="text"
+    class="flex-grow border-none bg-light-background text-dark-green focus:outline-none focus:ring-0 dark:bg-dark-background"
+    autofocus
+    [(ngModel)]="command"
+    autocomplete="off"
+    spellcheck="false"
+    placeholder="Type a command and press Enter"
+    (keyup.enter)="submitCommand()"
+/>

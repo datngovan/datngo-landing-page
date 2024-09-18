@@ -1,0 +1,3 @@
+<div *ngFor="let item of history$ | async">
+    <p>{{ item.date | date : 'short' }} - {{ item.command }}: {{ item.output }}</p>
+</div>

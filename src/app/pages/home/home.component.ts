@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BannerComponent } from '@lib/components/banner/banner.component';
+import { HostComponent } from '@lib/components/host/host.component';
 import { AppTheme, ThemeService } from '@lib/services/theme';
-import { HostComponent } from '@pages/host/host.component';
+import { HistoryComponent } from 'src/app/history/history.component';
+import { InputComponent } from '@lib/components/input/input.component';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
     standalone: true,
-    imports: [CommonModule, RouterModule, HostComponent, BannerComponent],
+    imports: [CommonModule, RouterModule, HostComponent, BannerComponent, HistoryComponent, InputComponent],
     templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit, OnDestroy {

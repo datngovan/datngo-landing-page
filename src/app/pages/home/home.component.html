@@ -1,13 +1,15 @@
 <section>
     <app-banner />
-    <div class="flex flex-row space-x-2 bg-light-background dark:bg-dark-background w-full h-full p-2 items-center">
+    <app-history />
+    <div class="flex h-full w-full flex-row items-center space-x-2 bg-light-background p-2 dark:bg-dark-background">
         <label
             for="prompt"
             class="flex-shrink"
         >
             <app-host />
         </label>
-        <input
+        <app-input />
+        <!-- <input
             #inputRef
             id="prompt"
             type="text"
@@ -15,7 +17,7 @@
             autoFocus
             autocomplete="off"
             spellcheck="false"
-        />
+        /> -->
     </div>
 </section>
 
